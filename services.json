@@ -1,0 +1,15 @@
+{
+  "relayer": "relayer.kuest.com",
+  "clob": "clob.kuest.com",
+  "data-api": "data-api.kuest.com",
+  "user-pnl-api": "user-pnl-api.kuest.com",
+  "community": "community.kuest.com",
+  "create-market": "create-market.kuest.com",
+  "gamma-api": "gamma-api.kuest.com",
+  "price-reference": "price-reference.kuest.com",
+  "geoblock": "geoblock.kuest.com",
+  "sdk-download": "sdk-download.kuest.com",
+  "ws-live-data": "ws-live-data.kuest.com",
+  "ws-subscriptions-clob": "ws-subscriptions-clob.kuest.com"
+}
+

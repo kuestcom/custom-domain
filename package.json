@@ -1,0 +1,30 @@
+{
+  "name": "kuest-custom-domain",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npm run generate && node --check examples/dashboard-worker.js && tsc --noEmit && wrangler deploy --dry-run --config wrangler.generated.jsonc",
+    "deploy": "npm run generate && wrangler deploy --config wrangler.generated.jsonc",
+    "generate": "node scripts/generate-config.mjs",
+    "test": "node --test test/config.test.mjs && vitest run test/worker.test.ts",
+    "types": "wrangler types --config wrangler.jsonc"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DOMAIN": {
+        "description": "Your domain in Cloudflare, without https:// (for example, markets.example.com)."
+      }
+    }
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.18.7",
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10",
+    "wrangler": "^4.113.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
