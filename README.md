@@ -13,7 +13,7 @@
 
 Enter your domain when Cloudflare asks for `DOMAIN`. The deployment creates the Worker, DNS records, and certificates for every service in [`services.json`](services.json).
 
-Cloudflare redeploys the Worker when its repository changes. Copies created by the deploy button also check this repository hourly for updates while preserving `DOMAIN`.
+Cloudflare creates an independent copy, not a fork. Automatic Kuest updates are available only to GitHub forks with Actions enabled; the sync workflow preserves `DOMAIN`.
 
 ## Local development
 
@@ -23,4 +23,3 @@ npm run types
 npm test
 npm run check
 ```
-
