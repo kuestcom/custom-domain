@@ -22,11 +22,11 @@ test("creates one custom domain per service", () => {
   ]);
 });
 
-test("the project config creates all 12 custom domains", async () => {
+test("the project config creates all 15 custom domains", async () => {
   const baseConfig = await readJson(new URL("../wrangler.jsonc", import.meta.url));
   const services = await readJson(new URL("../services.json", import.meta.url));
   const config = buildConfig(baseConfig, services);
 
-  assert.equal(config.routes.length, 12);
+  assert.equal(config.routes.length, 15);
   assert.equal(config.routes[1].pattern, "clob.example.com");
 });

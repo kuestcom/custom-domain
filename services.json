@@ -4,6 +4,9 @@
   "data-api": "data-api.kuest.com",
   "user-pnl-api": "user-pnl-api.kuest.com",
   "community": "community.kuest.com",
+  "escrow": "escrow.kuest.com",
+  "notifications": "notifications.kuest.com",
+  "subgraphs": "subgraphs.kuest.com",
   "create-market": "create-market.kuest.com",
   "gamma-api": "gamma-api.kuest.com",
   "price-reference": "price-reference.kuest.com",
@@ -12,4 +15,3 @@
   "ws-live-data": "ws-live-data.kuest.com",
   "ws-subscriptions-clob": "ws-subscriptions-clob.kuest.com"
 }
-
